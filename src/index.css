@@ -1,0 +1,253 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+.main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.background-container{
+    width: 1440px;
+    height: 783px;
+    /* background-color: #245a75; */
+    background-color: #F4F8FA;
+    position: relative;
+}
+.nav-container{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 56px;
+    background-color: white;
+}
+.main-content{
+    margin-top: 40px;
+    width: 560px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background-color: red; */
+}
+.title-text{
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #1B31A8;
+}
+.card-content{
+    margin-top: 20px;
+    width: 560px;
+    height: 511px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding: 32px 40px 0px 40px;
+    border-radius: 8px;
+    background-color: white;
+    /* x y blur-radius spread-radius color */
+    box-shadow: 0px 16px 32px 0px #1E2A3214;
+}
+.card-header{
+    width: 480px;
+    height: 64px;
+    display: flex;
+    /* background-color: pink; */
+    gap: 10px;
+}
+.title-container{
+    width: 400px;
+    margin-top: 5px;
+}
+.header-title{
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: left;   
+}
+.header-subtitle{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #708797;
+}
+.content-inputs{
+    display: flex;
+    margin-top: 24px;
+    width: 480px;
+    height: 81px;
+    /* background-color: #1B31A8; */
+    gap: 20px;
+}
+.total-amount-input-box{
+    width: 272px;
+    height: 81px;
+    text-align: left;
+}
+.reach-goal-input-box{
+    width: 192px;
+    height: 81px;
+    text-align: left;
+    position: relative;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.content-input-label{
+    width: 91px;
+    height: 21px;
+    font-size: 14px;
+    color: #1E2A32;
+    gap: 4px;
+    position: relative;
+}
+.icon-inside-input{
+    position: absolute;
+    z-index: 20;
+    left: 12px;
+    top: 37px;
+}
+.amount-input{
+    width: 272px;
+    height: 56px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #E9EEF2;
+    outline: none;
+    color: #4D6475;
+    font-size: 24px;
+    font-weight: 600;
+    padding-left: 41px;
+}
+.amount-input::-webkit-outer-spin-button,
+.amount-input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+.amount-input:focus{
+    caret-color: #c6cbcf;
+}
+.reach-date-input{
+    width: 192px;
+    height: 56px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #E9EEF2;
+    padding: 0 10px 0 10px;
+    outline: none;
+    cursor: default;
+}
+.reach-date-input:focus{
+    caret-color: transparent;
+}
+.reach-date-input:disabled{
+    background-color: #FFF;
+}
+.box-of-arrow-l{
+    display: flex;
+    width: 48px;
+    height: 56px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 23px;
+    cursor: pointer;
+}
+.box-of-arrow-r{
+    display: flex;
+    width: 48px;
+    height: 56px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 23px;
+    cursor: pointer;
+}
+.arrow-icon{
+    width: 8px;
+    height: 14px;
+}
+.month-text{
+    width: 76px;
+    height: 48px;
+    top: 4px;
+    left: 58px;
+    line-height: 25px;
+    position: absolute;
+    top: 27px;
+    text-align: center;
+}
+.monthly-amount-card{
+    width: 480px;
+    height: 158px;
+    margin-top: 24px;
+    border-radius: 8px;
+    border: 1px solid #E9EEF2;
+}
+.bottom-monthly-amount-card{
+    width: 478px;
+    height: 76px;
+    background-color: #F4F8FA;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 24px 32px 24px 32px;
+    text-align: left;
+}
+.header-monthly-amount-card{
+    width: 478px;
+    height: 80px;
+    padding: 24px 32px 24px 32px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.monthly-amount-title{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #1E2A32;
+}
+.price-monthly{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0px;
+    color: #0079FF;  
+}
+.confirm-button{
+    width: 320px;
+    height: 56px;
+    top: 415px;
+    left: 120px;
+    padding: 18px 0px 18px 0px;
+    border-radius: 32px;
+    background-color: #1B31A8;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 16px;
+    border-width: 0px;
+    letter-spacing: 1.5px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#focus-key:focus{
+    outline: none;
+}
